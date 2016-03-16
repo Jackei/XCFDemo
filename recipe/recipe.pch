@@ -1,0 +1,19 @@
+//
+//  recipe.pch
+//  recipe
+//
+//  Created by qizhijian on 16/3/15.
+//  Copyright © 2016年 qizhijian. All rights reserved.
+//
+
+#ifndef recipe_pch
+#define recipe_pch
+
+#import "Color.h"
+#import "Config.h"
+#import "JSONModel.h"
+#import "QSRequest.h"
+#import "ApiInterface.h"
+#import "UIImageView+WebCache.h"
+
+#endif /* recipe_pch */
