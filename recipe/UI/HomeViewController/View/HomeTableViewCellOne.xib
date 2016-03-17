@@ -17,19 +17,18 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="153-cj-63y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
-                        <color key="backgroundColor" red="1" green="0.50544862879999997" blue="0.86686599360000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="153-cj-63y" secondAttribute="height" multiplier="32:19" id="A00-Ob-2EV"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obb-Ah-fr0">
-                        <rect key="frame" x="25" y="251" width="270" height="21.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obb-Ah-fr0">
+                        <rect key="frame" x="25" y="251" width="270" height="22.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38c-uL-7CT">
-                        <rect key="frame" x="0.0" y="288.5" width="320" height="10"/>
+                        <rect key="frame" x="0.0" y="288" width="320" height="10"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="ZMe-cx-jr8"/>

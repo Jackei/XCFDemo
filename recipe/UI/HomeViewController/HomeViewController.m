@@ -13,6 +13,7 @@
 #import "HomeTableViewCellThree.h"
 #import "HomeTableViewCellFour.h"
 #import "HomeTableViewCellFive.h"
+#import "HomeADInfo.h"
 #import "HomeInfo.h"
 
 static NSString *one = @"HomeTableViewCellOne";
@@ -31,6 +32,7 @@ static NSString *header = @"HomeTableViewCellHeader";
 @implementation HomeViewController
 {
     HomeInfo *item;
+    UIRefreshControl *headerControl;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -45,10 +47,16 @@ static NSString *header = @"HomeTableViewCellHeader";
 
     [self registerTableViewCell];
     
-    self.homeTableView.tableFooterView = [UIView new];
     self.homeTableView.estimatedRowHeight = 280;
     self.homeTableView.rowHeight = UITableViewAutomaticDimension;
+    self.homeTableView.tableFooterView = [UIView new];
     
+    
+    headerControl = [[UIRefreshControl alloc] init];
+    [headerControl addTarget:self action:@selector(headerRefresh) forControlEvents:UIControlEventValueChanged];
+    [self.homeTableView addSubview:headerControl];
+    
+//    [self requestAD];
     [self requestData];
 }
 
@@ -62,6 +70,34 @@ static NSString *header = @"HomeTableViewCellHeader";
     [self.homeTableView registerNib:[UINib nibWithNibName:@"HomeTableViewCellHeader" bundle:nil] forCellReuseIdentifier:header];
 }
 
+- (void)headerRefresh
+{
+    [headerControl endRefreshing];
+}
+
+- (void)requestAD
+{
+//    http://api.xiachufang.com/v2/init_page_v5.json?timezone=Asia%2FShanghai&api_sign=e8563b3a69791fcf1b56c994d057169d&api_key=0f9f79be1dac5f003e7de6f876b17c00&origin=iphone&version=5.2.3
+    
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+    dict[@"slot_name"] = @"homepage_banner_ad1";
+    dict[@"height"] = @"172.5";
+    dict[@"width"] = @"690";
+    dict[@"origin"] = @"iphone";
+    dict[@"api_sign"] = @"36aeb8b73678ac908731fb409dc4be1b";
+    dict[@"supported_types"] = @"1";
+    dict[@"version"] = @"5.2.3";
+    dict[@"api_key"] = @"0f9f79be1dac5f003e7de6f876b17c00";
+    
+    [[QSRequest sharedClient] requestWithName:AD withParameters:dict successCallBack:^(HomeADInfo *adInfo) {
+        
+        NSLog(@"%@",adInfo);
+        
+    } failCallback:^(NSString *error) {
+        
+    }];
+}
+
 - (void)requestData
 {
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
@@ -72,7 +108,7 @@ static NSString *header = @"HomeTableViewCellHeader";
     dict[@"timezone"] = @"Asia/Shanghai";
     dict[@"version"] = @"5.2.3";
     dict[@"api_key"] = @"0f9f79be1dac5f003e7de6f876b17c00";
-
+    
     [[QSRequest sharedClient] requestWithName:Home withParameters:dict successCallBack:^(HomeInfo *info) {
        
         item = info;

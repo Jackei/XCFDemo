@@ -32,6 +32,10 @@
 		6B0757B11C98FDA500B98499 /* HomeTableViewCellBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0757B01C98FDA500B98499 /* HomeTableViewCellBase.m */; };
 		6B0757B51C9945AA00B98499 /* UIImageView+AddCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0757B41C9945AA00B98499 /* UIImageView+AddCorner.m */; };
 		6B0757B81C99461F00B98499 /* UIImage+AddCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0757B71C99461F00B98499 /* UIImage+AddCorner.m */; };
+		6B5FA7BA1C9A8E9200AEDBFE /* BaseCarrouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FA7B91C9A8E9200AEDBFE /* BaseCarrouselView.m */; };
+		6B5FA7BE1C9A953E00AEDBFE /* HomeADInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FA7BD1C9A953E00AEDBFE /* HomeADInfo.m */; };
+		6B5FA7C11C9A956700AEDBFE /* HomeADDetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FA7C01C9A956700AEDBFE /* HomeADDetailInfo.m */; };
+		6B5FA7C41C9A95C300AEDBFE /* HomeADDetailadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FA7C31C9A95C300AEDBFE /* HomeADDetailadInfo.m */; };
 		6BCC44EA1C97FB1800203771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCC44E91C97FB1800203771 /* main.m */; };
 		6BCC44F31C97FB1900203771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCC44F11C97FB1900203771 /* Main.storyboard */; };
 		6BCC44F51C97FB1900203771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BCC44F41C97FB1900203771 /* Assets.xcassets */; };
@@ -113,6 +117,14 @@
 		6B0757B41C9945AA00B98499 /* UIImageView+AddCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AddCorner.m"; sourceTree = "<group>"; };
 		6B0757B61C99461F00B98499 /* UIImage+AddCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AddCorner.h"; sourceTree = "<group>"; };
 		6B0757B71C99461F00B98499 /* UIImage+AddCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AddCorner.m"; sourceTree = "<group>"; };
+		6B5FA7B81C9A8E9200AEDBFE /* BaseCarrouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCarrouselView.h; sourceTree = "<group>"; };
+		6B5FA7B91C9A8E9200AEDBFE /* BaseCarrouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCarrouselView.m; sourceTree = "<group>"; };
+		6B5FA7BC1C9A953E00AEDBFE /* HomeADInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeADInfo.h; sourceTree = "<group>"; };
+		6B5FA7BD1C9A953E00AEDBFE /* HomeADInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeADInfo.m; sourceTree = "<group>"; };
+		6B5FA7BF1C9A956700AEDBFE /* HomeADDetailInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeADDetailInfo.h; sourceTree = "<group>"; };
+		6B5FA7C01C9A956700AEDBFE /* HomeADDetailInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeADDetailInfo.m; sourceTree = "<group>"; };
+		6B5FA7C21C9A95C300AEDBFE /* HomeADDetailadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeADDetailadInfo.h; sourceTree = "<group>"; };
+		6B5FA7C31C9A95C300AEDBFE /* HomeADDetailadInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeADDetailadInfo.m; sourceTree = "<group>"; };
 		6BCC44E51C97FB1800203771 /* recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCC44E91C97FB1800203771 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BCC44F21C97FB1900203771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -217,6 +229,19 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		6B5FA7BB1C9A953300AEDBFE /* HomeAD */ = {
+			isa = PBXGroup;
+			children = (
+				6B5FA7BC1C9A953E00AEDBFE /* HomeADInfo.h */,
+				6B5FA7BD1C9A953E00AEDBFE /* HomeADInfo.m */,
+				6B5FA7BF1C9A956700AEDBFE /* HomeADDetailInfo.h */,
+				6B5FA7C01C9A956700AEDBFE /* HomeADDetailInfo.m */,
+				6B5FA7C21C9A95C300AEDBFE /* HomeADDetailadInfo.h */,
+				6B5FA7C31C9A95C300AEDBFE /* HomeADDetailadInfo.m */,
+			);
+			path = HomeAD;
+			sourceTree = "<group>";
+		};
 		6BCC44DC1C97FB1800203771 = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +323,8 @@
 			children = (
 				6BCC45201C97FD1000203771 /* BaseViewController.h */,
 				6BCC45211C97FD1000203771 /* BaseViewController.m */,
+				6B5FA7B81C9A8E9200AEDBFE /* BaseCarrouselView.h */,
+				6B5FA7B91C9A8E9200AEDBFE /* BaseCarrouselView.m */,
 				6BCC45221C97FD1000203771 /* CustomNavigationView.h */,
 				6BCC45231C97FD1000203771 /* CustomNavigationView.m */,
 				6BCC45241C97FD1000203771 /* CustomNavigationViewController.h */,
@@ -311,6 +338,7 @@
 		6BCC45281C97FD1000203771 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6B5FA7BB1C9A953300AEDBFE /* HomeAD */,
 				6B0757041C98106300B98499 /* Home */,
 			);
 			path = Model;
@@ -628,6 +656,7 @@
 				6B0757B81C99461F00B98499 /* UIImage+AddCorner.m in Sources */,
 				6BCC454A1C97FD1000203771 /* CustomNavigationViewController.m in Sources */,
 				6B0757991C98EFAC00B98499 /* HomeTableViewCellThree.m in Sources */,
+				6B5FA7BE1C9A953E00AEDBFE /* HomeADInfo.m in Sources */,
 				6B07577E1C98E4E100B98499 /* HomeContentInfo.m in Sources */,
 				6B07578A1C98E76100B98499 /* HomeContentIssuesDetailContentInfo.m in Sources */,
 				6B07579F1C98EFC200B98499 /* HomeTableViewCellFive.m in Sources */,
@@ -641,8 +670,11 @@
 				6B07577B1C98E4B400B98499 /* HomeInfo.m in Sources */,
 				6BCC456C1C9804EE00203771 /* HomeViewController.m in Sources */,
 				6BCC45481C97FD1000203771 /* BaseViewController.m in Sources */,
+				6B5FA7C41C9A95C300AEDBFE /* HomeADDetailadInfo.m in Sources */,
 				6B0757AD1C98FD0A00B98499 /* HomeTableViewCellHeader.m in Sources */,
 				6BCC44EA1C97FB1800203771 /* main.m in Sources */,
+				6B5FA7BA1C9A8E9200AEDBFE /* BaseCarrouselView.m in Sources */,
+				6B5FA7C11C9A956700AEDBFE /* HomeADDetailInfo.m in Sources */,
 				6B0757931C98EF9800B98499 /* HomeTableViewCellOne.m in Sources */,
 				6BCC45491C97FD1000203771 /* CustomNavigationView.m in Sources */,
 				6BCC454E1C97FD1000203771 /* QSNetworkRoot.m in Sources */,
@@ -784,7 +816,7 @@
 				INFOPLIST_FILE = recipe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qizhijian.recipe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ichsy.TinyStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -798,7 +830,7 @@
 				INFOPLIST_FILE = recipe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qizhijian.recipe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ichsy.TinyStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -3,7 +3,8 @@
 
     <Urls>
         
-        <Url Name="host">http://api.xiachufang.com/v2/issues/</Url>
+        <Url Name="host1">http://api.xiachufang.com/v2/issues/</Url>
+        <Url Name="host2">http://api.xiachufang.com/v2/ad/</Url>
 
     </Urls>
     
@@ -20,8 +21,15 @@
         Method="GET"
         Timeout="20"
         UrlDomain="list.json"
-        Url="host"
+        Url="host1"
         ReturnType="HomeInfo"/>
+
+        <ServiceMethod
+        Method="GET"
+        Timeout="20"
+        UrlDomain="show.json"
+        Url="host2"
+        ReturnType="HomeADInfo"/>
 
     </ServiceMethods>
     

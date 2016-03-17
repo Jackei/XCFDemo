@@ -10,5 +10,6 @@
 #define ApiInterface_h
 
 #define Home @"list.json"
+#define AD   @"show.json"
 
 #endif /* ApiInterface_h */
