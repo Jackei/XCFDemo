@@ -36,6 +36,8 @@
 		6B5FA7BE1C9A953E00AEDBFE /* HomeADInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FA7BD1C9A953E00AEDBFE /* HomeADInfo.m */; };
 		6B5FA7C11C9A956700AEDBFE /* HomeADDetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FA7C01C9A956700AEDBFE /* HomeADDetailInfo.m */; };
 		6B5FA7C41C9A95C300AEDBFE /* HomeADDetailadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FA7C31C9A95C300AEDBFE /* HomeADDetailadInfo.m */; };
+		6B8F79DC1C9B91C700BAC9FE /* CustomTabBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F79DB1C9B91C700BAC9FE /* CustomTabBarDelegate.m */; };
+		6B8F79DF1C9B971200BAC9FE /* CustomTabBarAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F79DE1C9B971200BAC9FE /* CustomTabBarAnimationTransition.m */; };
 		6BCC44EA1C97FB1800203771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCC44E91C97FB1800203771 /* main.m */; };
 		6BCC44F31C97FB1900203771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCC44F11C97FB1900203771 /* Main.storyboard */; };
 		6BCC44F51C97FB1900203771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BCC44F41C97FB1900203771 /* Assets.xcassets */; };
@@ -125,6 +127,10 @@
 		6B5FA7C01C9A956700AEDBFE /* HomeADDetailInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeADDetailInfo.m; sourceTree = "<group>"; };
 		6B5FA7C21C9A95C300AEDBFE /* HomeADDetailadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeADDetailadInfo.h; sourceTree = "<group>"; };
 		6B5FA7C31C9A95C300AEDBFE /* HomeADDetailadInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeADDetailadInfo.m; sourceTree = "<group>"; };
+		6B8F79DA1C9B91C700BAC9FE /* CustomTabBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarDelegate.h; sourceTree = "<group>"; };
+		6B8F79DB1C9B91C700BAC9FE /* CustomTabBarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarDelegate.m; sourceTree = "<group>"; };
+		6B8F79DD1C9B971200BAC9FE /* CustomTabBarAnimationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarAnimationTransition.h; sourceTree = "<group>"; };
+		6B8F79DE1C9B971200BAC9FE /* CustomTabBarAnimationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarAnimationTransition.m; sourceTree = "<group>"; };
 		6BCC44E51C97FB1800203771 /* recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCC44E91C97FB1800203771 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BCC44F21C97FB1900203771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -242,6 +248,17 @@
 			path = HomeAD;
 			sourceTree = "<group>";
 		};
+		6B8F79D91C9B908C00BAC9FE /* AnimationTransition */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F79DA1C9B91C700BAC9FE /* CustomTabBarDelegate.h */,
+				6B8F79DB1C9B91C700BAC9FE /* CustomTabBarDelegate.m */,
+				6B8F79DD1C9B971200BAC9FE /* CustomTabBarAnimationTransition.h */,
+				6B8F79DE1C9B971200BAC9FE /* CustomTabBarAnimationTransition.m */,
+			);
+			path = AnimationTransition;
+			sourceTree = "<group>";
+		};
 		6BCC44DC1C97FB1800203771 = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +284,7 @@
 		6BCC44E71C97FB1800203771 /* recipe */ = {
 			isa = PBXGroup;
 			children = (
+				6B8F79D91C9B908C00BAC9FE /* AnimationTransition */,
 				6B0757B21C9944E000B98499 /* Category */,
 				6BCC451F1C97FD1000203771 /* BaseUI */,
 				6BCC45281C97FD1000203771 /* Model */,
@@ -664,6 +682,7 @@
 				6BCC451E1C97FCEA00203771 /* AppDelegate.m in Sources */,
 				6B0757871C98E63B00B98499 /* HomeContentIssuesDetailInfo.m in Sources */,
 				6BCC454B1C97FD1000203771 /* CustomTabBarController.m in Sources */,
+				6B8F79DC1C9B91C700BAC9FE /* CustomTabBarDelegate.m in Sources */,
 				6BCC454F1C97FD1000203771 /* QSRequest.m in Sources */,
 				6B0757901C98E84300B98499 /* HomeContentIssuesDetailContentAuthorInfo.m in Sources */,
 				6BCC454D1C97FD1000203771 /* QSNetworkMethod.m in Sources */,
@@ -675,6 +694,7 @@
 				6BCC44EA1C97FB1800203771 /* main.m in Sources */,
 				6B5FA7BA1C9A8E9200AEDBFE /* BaseCarrouselView.m in Sources */,
 				6B5FA7C11C9A956700AEDBFE /* HomeADDetailInfo.m in Sources */,
+				6B8F79DF1C9B971200BAC9FE /* CustomTabBarAnimationTransition.m in Sources */,
 				6B0757931C98EF9800B98499 /* HomeTableViewCellOne.m in Sources */,
 				6BCC45491C97FD1000203771 /* CustomNavigationView.m in Sources */,
 				6BCC454E1C97FD1000203771 /* QSNetworkRoot.m in Sources */,
