@@ -202,4 +202,13 @@ static NSString *header = @"HomeTableViewCellHeader";
     }
 }
 
+- (UITableView *)homeTableView
+{
+    if (_homeTableView == nil)
+    {
+        
+    }
+    return _homeTableView;
+}
+
 @end
